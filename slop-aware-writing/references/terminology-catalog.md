@@ -22,6 +22,7 @@ and surrounding document before changing it.
 | `paradigm` | a recognized conceptual or programming model is meant | Would `approach`, `method`, or `model` preserve the meaning? |
 | `first-class` | the domain has a defined first-class entity or capability | Which concrete support makes it more than important or well supported? |
 | `production-ready` | release criteria, supported environments, tests, and operational limits are named | Ready for which workload and according to which checks? |
+| `ledger`, `원장` | accounting books organized by account, a broker or bank system of record, or distributed-ledger technology is meant | Is the referent account-organized or authoritative, or is it a plain chronological transaction list the reader would call a trade history? |
 
 The answer can come from surrounding context; do not force every sentence to
 repeat a definition. If the question has no answer, choose the plain term that
@@ -42,7 +43,11 @@ English suffix patterns do not diagnose Korean, Italian, or Chinese prose.
 **Borrowing and code-switching.** Keep identifiers, standard API and protocol
 names, and borrowed terms the intended community actually searches for. Expand
 or gloss them when readers need help. Replace ornamental English or a prestige
-borrowing only when the target-language term is equally precise.
+borrowing only when the target-language term is equally precise. Jargon also
+travels within one language: calling a personal chronological trade list a
+`원장` (ledger) imports broker-system vocabulary whose strict meaning — books
+organized by account, or a system of record — the referent lacks; use the
+reader's term, such as `거래내역` (trade history).
 
 **Abbreviation.** Expand at first use when the audience may not know it. Do not
 expand universally known domain forms on every page, and never change an

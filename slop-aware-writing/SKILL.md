@@ -26,8 +26,7 @@ syntax. This skill supplies the part base fluency does not: a slop definition,
 evidence and voice boundaries, contextual diagnosis, minimal-edit tests, and
 language-specific failure cues that should not be generalized across languages.
 
-Ordinary chat answers are outside this skill. The optional block in
-[core-rules.md](references/core-rules.md) is only for Korean always-on answers.
+Ordinary chat answers and general language correction are outside this skill.
 
 ## Intake
 
@@ -69,6 +68,14 @@ insufficient.
 
 Intra-Chinese script or locale normalization is covered. Translation between
 different languages is not.
+
+## Adjacent skill composition
+
+When `korean-clarity` also applies, this skill owns evidence, reader job,
+authority, structure, and voice; the sibling repairs only Korean semantic
+completeness inside those constraints. It cannot invent facts, strengthen
+claims, resolve ambiguity silently, or flatten deliberate voice. Each skill
+must remain usable when installed alone.
 
 ## Correction floor
 
@@ -124,16 +131,14 @@ document by a detector score, pattern count, or change percentage.
   [source grounding](references/source-grounding.md),
   [revision](references/revision.md), [terminology](references/terminology.md),
   and [term verification](references/verification-procedure.md).
-- Structure: [templates](references/templates.md),
-  [document patterns](references/doc-patterns.md),
+- Structure: [document shapes](references/document-shapes.md),
   [zoom rules](references/style-zoom-rules.md),
   [anti-patterns](references/structure-anti-patterns.md), and the
   [terminology catalog](references/terminology-catalog.md).
 - Overlays: [English](references/english-writing.md),
   [Korean](references/korean-tells.md),
   [Italian](references/italian-writing.md), and
-  [Chinese](references/chinese-writing.md). The optional
-  [Korean answer core](references/core-rules.md) is not a prose baseline.
+  [Chinese](references/chinese-writing.md).
 
 ## Gotchas
 

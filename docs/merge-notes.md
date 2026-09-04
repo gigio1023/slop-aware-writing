@@ -1,13 +1,50 @@
 # Design and Lineage Notes
 
-This repository's skill has five design generations. The 2026-03 generation
+This repository's skills have six design generations. The 2026-03 generation
 built `humanize-doc` from an external anti-slop line and an internal
 document-composition line. The 2026-07 generation built `clear-writing` by
 consolidating six writing skills into one. The 2026-08 generation separated a
 common integrity core from English, Korean, Italian, and Chinese language
 layers, recentered them on model-native slop diagnosis, then adopted the
-`slop-aware-writing` handle. These notes record the lineage; they are not an
-installation path.
+`slop-aware-writing` handle. The 2026-09 generation added a distinct Korean
+semantic-clarity skill without splitting the document jobs that still share one
+trigger surface. These notes record the lineage; they are not an installation
+path.
+
+## Generation 6 (2026-09): companion Korean clarity skill
+
+`fluent-korean` exposed a failure that the slop taxonomy deliberately does not
+own: compressed agent Korean can omit the sentence components and morphology
+that carry a proposition even when the text has no generic claims, performed
+reasoning, template completion, or voice flattening. Treating that failure as
+another Korean AI tell would have turned `korean-tells.md` back into a grammar
+syllabus.
+
+The repository therefore publishes two independently installable skills:
+
+- `slop-aware-writing` keeps document-level diagnosis, evidence boundaries,
+  reader context, structure, and voice preservation;
+- `korean-clarity` restores Korean semantic completeness in agent responses and
+  artifacts without padding, translation, or authorship claims.
+
+When both apply, the first skill owns evidence, authority, structure, and
+voice. The second operates only as a lower-level clarity floor. Neither skill
+references files inside the other package, so selecting one skill for
+installation does not create a hidden dependency.
+
+The former `clear-writing:core v2` block remains frozen in the original package
+for deployed-copy recognition, but is no longer linked from the active
+`slop-aware-writing` route. A new, smaller always-on asset is maintained with
+`korean-clarity`. Its rules adopt semantic-completeness and conventional-wording
+ideas from `fluent-korean` while rejecting wholesale copying, universal
+sentence-shape rules, active Sino-Korean promotion, and harness policy in the
+portable contract.
+
+This generation also replaces the large generic template and worked-pattern
+catalogs with one compact `document-shapes.md` reference. The retained guidance
+selects structure by reader job and evidence; it does not invite agents to fill
+stock headings or fictional examples merely because a document resembles a
+familiar type.
 
 ## Generation 5 (2026-08): slop-aware-writing
 

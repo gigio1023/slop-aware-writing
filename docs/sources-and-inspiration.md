@@ -1,21 +1,21 @@
 # Sources and Inspiration
 
-This register records what informed `slop-aware-writing`, what the repository
-actually adopted, and what it rejected. It is a provenance record, not a claim
-that every source is equally authoritative. Research findings, official
-guidance, open-source skills, and a maintainer-supplied social post carry
-different evidentiary weight.
+This register records what informed the repository's skills, what they actually
+adopted, and what they rejected. It is a provenance record, not a claim that
+every source is equally authoritative. Research findings, official guidance,
+open-source skills, and a maintainer-supplied social post carry different
+evidentiary weight.
 
 Unless an entry says otherwise, `Inspected` means 2026-07-31. `Adopted` means
-the maintainers restated an idea independently and fitted it to this skill's
-scope. It does not mean that source prose, examples, tables, or code were
+the maintainers restated an idea independently and fitted it to the relevant
+skill's scope. It does not mean that source prose, examples, tables, or code were
 copied. `Rejected` records tempting ideas that should not return without new
 evidence.
 
 ## Register map
 
-- Korean: `im-not-ai`, KatFishNet, and National Institute of Korean Language
-  translationese studies
+- Korean: `fluent-korean`, `im-not-ai`, KatFishNet, and National Institute of
+  Korean Language translationese studies
 - English and common: anti-slop skills, documentation workflows, source and
   argument guidance, plain-language guidance, voice and assisted-revision
   research, Pilcrow, local research notes, and frontier-model prompting guidance
@@ -90,6 +90,29 @@ evidence.
 - **Rejected:** universal bans, applying a translation-corpus observation to
   native Korean without context, or treating translationese as AI authorship
   evidence. Both articles discuss scope limits and context-sensitive choices.
+
+## snflkd/fluent-korean
+
+- **Title and URL:** [`fluent-korean`](https://github.com/snflkd/fluent-korean)
+- **Responsible:** snflkd.
+- **Version:** repository `main`; the plugin manifest reports `1.0.0` but the
+  repository does not publish tagged releases.
+- **Commit:** `ce8683f0eba8cddb91de4dcd151425ff73e60498` (2026-08-23).
+- **Inspected:** 2026-09-04; README, both output-style variants, plugin and
+  marketplace manifests, commit history, open issue, and license.
+- **License/status:** MIT, copyright 2026 snflkd. Active at inspection. The
+  repository provides maintainer-authored operational guidance and examples,
+  not a public corpus or reproducible writing-quality evaluation.
+- **Adopted:** a separate Korean semantic-clarity layer for agent output;
+  contextual recovery of omitted sentence components, particles, endings, and
+  predicates; preservation of established Korean or source-language technical
+  terms; and a keep test for conventional metaphor. These ideas were restated
+  independently for the `korean-clarity` contract.
+- **Rejected:** vendoring either output-style file; copying its examples;
+  ignoring the writer's requested voice; requiring every sentence to expose
+  every recoverable component; actively promoting Sino-Korean vocabulary;
+  duplicating the strict-profile em-dash rule; and placing summary,
+  subagent-prompt, or harness configuration policy in the portable skill.
 
 ## petergyang/no-ai-slop
 

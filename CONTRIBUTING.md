@@ -1,9 +1,9 @@
 # Contributing
 
-This repository publishes one installable skill. Changes are small and
-frequent. The commit log is the durable decision record for why a change was
-made, what it rejected, and what was checked before it shipped. Source
-provenance, inspection dates, and reuse status live in the
+This repository publishes two independently installable skills. Changes are
+small and frequent. The commit log is the durable decision record for why a
+change was made, what it rejected, and what was checked before it shipped.
+Source provenance, inspection dates, and reuse status live in the
 [source register](docs/sources-and-inspiration.md). The rules below keep the
 decision history readable a year later.
 
@@ -79,11 +79,11 @@ Run the checks that the change actually touches, and report their results in
 the body:
 
 ```bash
-npx --yes skills add . --list --full-depth   # must report exactly: slop-aware-writing
+npx --yes skills add . --list --full-depth
 ```
 
-Also confirm that every referenced path exists, that `SKILL.md`'s frontmatter
-name still matches its folder, and that `README.md` and `README.ko.md` stay
-aligned. Push to `main`; pull requests are reserved for changes worth a review
-checkpoint, and history on `main` is not rewritten once others may have pulled
-it.
+The command must report exactly `slop-aware-writing` and `korean-clarity`. Also
+confirm that every referenced path exists, that each `SKILL.md` frontmatter name
+matches its folder, and that `README.md` and `README.ko.md` stay aligned. Push to
+`main`; pull requests are reserved for changes worth a review checkpoint, and
+history on `main` is not rewritten once others may have pulled it.

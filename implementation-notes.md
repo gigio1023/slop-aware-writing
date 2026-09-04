@@ -2,6 +2,31 @@
 
 Use this file for deviations that affect later review.
 
+## 2026-09-04
+
+- Plan: improve the existing slop-aware writing behavior with the useful parts
+  of `snflkd/fluent-korean` while keeping the repository installable as a skill
+  package.
+- Reality: the upstream material addresses Korean semantic completeness in
+  agent output, while `slop-aware-writing` deliberately excludes ordinary
+  grammar and chat. Folding both into one trigger would blur that boundary and
+  make the document skill fire too broadly.
+- Conservative choice: publish `korean-clarity` as an independently installable
+  sibling with an optional always-on asset. Keep evidence, structure, authority,
+  and voice in `slop-aware-writing`; freeze the deployed legacy Korean core for
+  marker recognition. Restate the upstream ideas independently and reject
+  universal sentence shapes, vocabulary prestige rules, copied examples, and
+  harness-specific policy.
+- Structure correction: replace the 916-line generic template and worked
+  pattern catalogs with one compact document-shape reference selected by reader
+  job and evidence. This preserves necessary coverage without encouraging stock
+  headings and fictional completion.
+- Verification: both skill validators passed; both Skills CLI listing modes
+  found exactly `slop-aware-writing` and `korean-clarity`; every
+  non-placeholder local Markdown link target exists; `git diff --check` passed.
+  No cross-harness behavior run or representative-reader benchmark was
+  performed, so these checks do not establish measured writing-quality gains.
+
 ## 2026-08-03
 
 - Plan: keep the published handle unchanged until the maintainer selected a

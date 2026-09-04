@@ -1,28 +1,27 @@
-# Core Rules — Always-On Korean Answer Guidelines
+# Legacy Core Rules — Always-On Korean Answer Guidelines
 
-> STATUS: CANONICAL (v2, 2026-08-02). This file is the canonical source for
-> the optional always-on Korean tier of the slop-aware-writing system. Inside the
-> active skill it applies only to Korean spans; it is not a multilingual
-> generation baseline.
+> STATUS: LEGACY/FROZEN (v2, 2026-09-04). This file remains in the package so
+> maintainers can identify deployed copies that use the
+> `clear-writing:core v2` marker. It is no longer part of the
+> `slop-aware-writing` normal path. The sibling `korean-clarity` skill owns the
+> maintained Korean clarity contract and its optional always-on asset.
 >
 > Install format: copy the ruleset between the markers below into the
 > always-on layer verbatim, keeping the
 > `<!-- clear-writing:core v2 --> ... <!-- /clear-writing:core -->` wrapper so
 > later updates replace the block mechanically. The wrapper intentionally keeps
 > the previous skill name because deployed copies use it as an update marker.
-> Bump the opening version marker and status line whenever the ruleset changes,
-> then re-copy.
+> Do not extend this block. New Korean response rules belong in
+> `korean-clarity`; keep this text frozen so old deployments remain recognizable.
 >
 > Installation target: use the harness's supported always-on instruction
 > surface. Repository maintenance notes may record a maintainer deployment,
 > but this portable reference does not assume a local path or symlink layout.
 >
-> Maintenance: rules are capped at 20; a rule that measurably is not followed
-> gets removed, not reinforced. These rules fix pattern-level style; they do
-> not fix model-level Korean limits (particle choice, lexical nuance).
-> Inside the active skill, job-specific keep tests and meaning-preservation
-> rules refine these compact surface defaults. "Actual names and numbers" in
-> Rule 13 means material already supplied or established by allowed evidence.
+> Historical boundary: these rules fix pattern-level style; they do not supply
+> the semantic-completeness contract now maintained by `korean-clarity`.
+> "Actual names and numbers" in Rule 13 means material already supplied or
+> established by allowed evidence.
 
 ## Contents
 

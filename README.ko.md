@@ -1,28 +1,39 @@
-# slop-aware-writing
+# Slop-Aware Writing Skills
 
 [![skills.sh](https://skills.sh/b/gigio1023/slop-aware-writing)](https://skills.sh/gigio1023/slop-aware-writing)
 ![writing](https://img.shields.io/badge/writing-EN%20%7C%20KO%20%7C%20IT%20%7C%20ZH-22684E)
-![package](https://img.shields.io/badge/SKILL.md-router%20%2B%2019%20references-555)
+![package](https://img.shields.io/badge/package-2%20portable%20skills-555)
 [![license](https://img.shields.io/badge/license-MIT-555)](LICENSE)
 
-AI slop을 예방하거나 걷어내면서 문서를 작성하고 개고합니다. 원문의 의미와
-저자 목소리는 보존합니다. 이 스킬에서 slop은 작성 주체를 가리키는 표지가
-아닙니다. 그럴듯하게 완성하려는 압력이 선택, 근거, 독자 맥락, 관점을 밀어낸
-기능적 글쓰기 결함입니다.
+이 저장소는 서로 연결되는 글쓰기 스킬 두 개를 배포합니다.
+`slop-aware-writing`은 원문의 의미와 저자 목소리를 보존하면서 AI slop을
+예방하거나 걷어냅니다. `korean-clarity`는 에이전트식 압축 때문에 문장 성분,
+조사와 어미, 서술어, 통상적인 기술 표현이 빠진 한국어를 복구합니다.
 
-`slop-aware-writing`은 휴머나이즈와 deslop 작업을 중심으로 README, 가이드,
-스펙, ADR, 메모, 위키, 블로그 초안을 다룹니다. 일반 문법과 관용 표현은 LLM의
-기본 언어 능력에 맡깁니다. 스킬에는 AI slop 진단, 근거 경계, 목소리 보호,
-최소 수정 판정처럼 기본 유창성만으로 지키기 어려운 규칙을 남깁니다.
+`slop-aware-writing`에서 slop은 작성 주체를 가리키는 표지가 아닙니다.
+그럴듯하게 완성하려는 압력이 선택, 근거, 독자 맥락, 관점을 밀어낸 기능적
+글쓰기 결함입니다. 이 스킬은 휴머나이즈와 deslop 작업을 중심으로 README,
+가이드, 스펙, ADR, 메모, 위키, 블로그 초안을 다룹니다. 일반 문법과 관용 표현은
+LLM의 기본 언어 능력에 맡깁니다. 스킬에는 AI slop 진단, 근거 경계, 목소리
+보호, 최소 수정 판정처럼 기본 유창성만으로 지키기 어려운 규칙을 남깁니다.
 
 [구조](#구조) · [언어 오버레이](#언어-오버레이) · [근거](#근거와-계보) ·
 [패키지](#패키지-구조) · [설치](#설치) · [개발](#로컬-개발)
 
 ## 구조
 
-`SKILL.md`는 라우터입니다. 독자 과업, 근거 경계, 수정 권한, 저장소 정책, 저자
-샘플을 확인합니다. 공통 slop 진단은 항상 불러옵니다. 언어별 오버레이는 후보
-표현이 해당 언어나 지역 규칙에 걸릴 때만 불러옵니다.
+| 스킬 | 적용할 작업 | 적용하지 않을 작업 |
+|---|---|---|
+| `slop-aware-writing` | 문서 수준 deslop, 근거 기반 작성, 목소리를 보존하는 개고, 용어 점검 | 문법만 고치는 작업, 번역, 일반 채팅 |
+| `korean-clarity` | 문장 성분, 조사와 어미, 서술어, 관계, 통상적인 표현이 빠진 한국어 답변과 산출물 | 번역, AI 작성 판정, 단독 문서 수준 deslop |
+
+두 스킬은 각자 발동하며 따로 설치할 수 있습니다. 둘 다 적용되면
+`slop-aware-writing`이 근거 경계, 독자 과업, 구조, 수정 권한, 목소리를 정합니다.
+`korean-clarity`는 그 제약 안에서 의미 완결성만 복구합니다.
+
+`slop-aware-writing`의 `SKILL.md`는 라우터입니다. 독자 과업, 근거 경계, 수정
+권한, 저장소 정책, 저자 샘플을 확인합니다. 공통 slop 진단은 항상 불러옵니다.
+언어별 오버레이는 후보 표현이 해당 언어나 지역 규칙에 걸릴 때만 불러옵니다.
 
 | 작업 | 범위 | 주 reference |
 |---|---|---|
@@ -59,16 +70,17 @@ AI slop을 예방하거나 걷어내면서 문서를 작성하고 개고합니�
 문법 검사만 요청한 작업에는 이 스킬을 쓰지 않습니다. 영어 규칙도 번역하지
 않습니다.
 
-`references/core-rules.md`의 선택형 블록은 한국어 상시 답변 계층입니다. 영어,
-이탈리아어, 중국어의 생성 기준이 아닙니다.
+`korean-clarity`는 한국어 문법 참고서가 아니라 의미 명료성을 지키는 작은
+계층입니다. 사용자가 설정을 요청하면 `assets/always-on-core.md`를 지원되는 상시
+지침 영역에 복사할 수 있습니다. 이 자산이 없어도 스킬은 동작합니다.
 
 ## 근거와 계보
 
 [출처와 영감 문서](docs/sources-and-inspiration.md)는 각 자료의 확인 버전,
 출처 상태나 라이선스, 채택한 통찰, 적용 범위, 기각한 아이디어를 기록합니다.
-`im-not-ai`, `petergyang/no-ai-slop`, 로컬 `brain/clips`와 `brain/research`,
-공식 언어 지침과 쉬운 글쓰기 지침, 중국어 지역별 표준, 모델 보조 수정과 생성
-문체 연구를 포함합니다.
+`fluent-korean`, `im-not-ai`, `petergyang/no-ai-slop`, 로컬 `brain/clips`와
+`brain/research`, 공식 언어 지침과 쉬운 글쓰기 지침, 중국어 지역별 표준, 모델
+보조 수정과 생성 문체 연구를 포함합니다.
 
 [설계와 계보 기록](docs/merge-notes.md)은 이전 스킬을 통합한 과정을 설명합니다.
 [재설계 계획](docs/redesign-plan.md)은 과거 설계 기록입니다.
@@ -83,9 +95,12 @@ slop-aware-writing/
 ├── README.ko.md
 ├── LICENSE
 ├── docs/                   # 출처와 설계 기록, 설치 대상 아님
-└── slop-aware-writing/     # 설치되는 스킬 하나
+├── korean-clarity/         # 한국어 의미 명료성 스킬
+│   ├── SKILL.md
+│   └── assets/             # 선택형 상시 지침 자산
+└── slop-aware-writing/     # 문서 수준 slop 스킬
     ├── SKILL.md
-    └── references/         # 19개, 작업과 언어에 따라 로드
+    └── references/         # 작업과 언어에 따라 로드
 ```
 
 패키지는 [Agent Skills 형식](https://agentskills.io/)을 따르고
@@ -98,16 +113,17 @@ Node.js 22.20.0 이상이 필요합니다.
 
 ```bash
 npx --yes skills add 'gigio1023/slop-aware-writing#main' \
-  --skill slop-aware-writing \
+  --skill slop-aware-writing korean-clarity \
   --agent codex claude-code \
   --global \
   --yes
 ```
 
-에이전트 ID는 필요에 따라 바꿉니다. `cursor`, `gemini-cli`, `antigravity`도
-지원합니다. 프로젝트에만 설치하려면 `--global`을 뺍니다. 설치 확인은
+둘 중 하나만 설치하려면 다른 스킬 이름을 뺍니다. 에이전트 ID는 필요에 따라
+바꿉니다. `cursor`, `gemini-cli`, `antigravity`도 지원합니다. 프로젝트에만
+설치하려면 `--global`을 뺍니다. 설치 확인은
 `npx --yes skills list --global`, 갱신은
-`npx --yes skills update slop-aware-writing --global --yes`를 씁니다.
+`npx --yes skills update slop-aware-writing korean-clarity --global --yes`를 씁니다.
 
 ### 이름 변경 마이그레이션
 
@@ -128,6 +144,6 @@ npx --yes skills remove --global clear-writing --yes
 npx --yes skills add . --list --full-depth
 ```
 
-공개하기 전에 명령이 `slop-aware-writing` 하나만 찾는지, frontmatter와 폴더
-이름이 같은지, 모든 reference 링크가 존재하는지, 두 README가 같은 패키지를
-설명하는지 확인합니다.
+공개하기 전에 명령이 `slop-aware-writing`과 `korean-clarity` 두 개를 정확히
+찾는지, 각 frontmatter와 폴더 이름이 같은지, 모든 reference와 asset 링크가
+존재하는지, 두 README가 같은 패키지를 설명하는지 확인합니다.

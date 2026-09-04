@@ -84,8 +84,8 @@ Expected:
 
 ## Package checks
 
-From the repository root, both commands should discover exactly one skill
-named `slop-aware-writing`:
+From the repository root, both commands should discover exactly two skills
+named `slop-aware-writing` and `korean-clarity`:
 
 ```bash
 npx --yes skills add . --list

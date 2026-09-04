@@ -131,8 +131,7 @@ document by a detector score, pattern count, or change percentage.
   [source grounding](references/source-grounding.md),
   [revision](references/revision.md), [terminology](references/terminology.md),
   and [term verification](references/verification-procedure.md).
-- Structure: [templates](references/templates.md),
-  [document patterns](references/doc-patterns.md),
+- Structure: [document shapes](references/document-shapes.md),
   [zoom rules](references/style-zoom-rules.md),
   [anti-patterns](references/structure-anti-patterns.md), and the
   [terminology catalog](references/terminology-catalog.md).

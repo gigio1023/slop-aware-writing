@@ -51,9 +51,8 @@ bounded gap and its consequence, or omit the unsupported claim. When code and
 a normative spec disagree, surface the conflict: code shows current behavior;
 the spec may intentionally describe the target.
 
-`templates.md` offers page shapes as a menu, never a mandatory
-skeleton. `doc-patterns.md` collects worked repairs for
-common technical-documentation problems.
+`document-shapes.md` offers compact selection prompts for common reader jobs.
+It is a menu, never a mandatory skeleton.
 
 ## Document spine
 

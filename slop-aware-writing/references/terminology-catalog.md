@@ -1,9 +1,6 @@
 # Contextual Terminology Catalog
 
-This catalog narrows questions; it does not map banned words to approved
-synonyms. A term is defective only when its normal relation, mechanism, or
-audience does not match the sentence. Read the governing spec, project glossary,
-and surrounding document before changing it.
+This catalog narrows questions; it does not map banned words to approved synonyms. A term is defective only when its normal relation, mechanism, or audience does not match the sentence. Read the governing spec, project glossary, and surrounding document before changing it.
 
 ## Mechanism questions for technical terms
 
@@ -24,38 +21,19 @@ and surrounding document before changing it.
 | `production-ready` | release criteria, supported environments, tests, and operational limits are named | Ready for which workload and according to which checks? |
 | `ledger`, `원장` | accounting books organized by account, a broker or bank system of record, or distributed-ledger technology is meant | Is the referent account-organized or authoritative, or is it a plain chronological transaction list the reader would call a trade history? |
 
-The answer can come from surrounding context; do not force every sentence to
-repeat a definition. If the question has no answer, choose the plain term that
-names the actual relation or rewrite the sentence.
+The answer can come from surrounding context; do not force every sentence to repeat a definition. If the question has no answer, choose the plain term that names the actual relation or rewrite the sentence.
 
 ## Cross-language checks
 
-**Self-important naming.** Labels such as "framework", "methodology",
-"architecture", `体系`, `框架`, `metodologia`, or `체계` can be exact. When the
-text names only a short checklist or one procedure, state what exists instead
-of increasing its rank.
+**Self-important naming.** Labels such as "framework", "methodology", "architecture", `体系`, `框架`, `metodologia`, or `체계` can be exact. When the text names only a short checklist or one procedure, state what exists instead of increasing its rank.
 
-**Nominalized process.** A noun may help later reference or carry a legal,
-technical, or academic concept. When it only hides an actor and action, restore
-the language's natural finite verb. Apply the target language's own rules;
-English suffix patterns do not diagnose Korean, Italian, or Chinese prose.
+**Nominalized process.** A noun may help later reference or carry a legal, technical, or academic concept. When it only hides an actor and action, restore the language's natural finite verb. Apply the target language's own rules; English suffix patterns do not diagnose Korean, Italian, or Chinese prose.
 
-**Borrowing and code-switching.** Keep identifiers, standard API and protocol
-names, and borrowed terms the intended community actually searches for. Expand
-or gloss them when readers need help. Replace ornamental English or a prestige
-borrowing only when the target-language term is equally precise. Jargon also
-travels within one language: calling a personal chronological trade list a
-`원장` (ledger) imports broker-system vocabulary whose strict meaning — books
-organized by account, or a system of record — the referent lacks; use the
-reader's term, such as `거래내역` (trade history).
+**Borrowing and code-switching.** Keep identifiers, standard API and protocol names, and borrowed terms the intended community actually searches for. Expand or gloss them when readers need help. Replace ornamental English or a prestige borrowing only when the target-language term is equally precise. Jargon also travels within one language: calling a personal chronological trade list a `원장` (ledger) imports broker-system vocabulary whose strict meaning — books organized by account, or a system of record — the referent lacks; use the reader's term, such as `거래내역` (trade history).
 
-**Abbreviation.** Expand at first use when the audience may not know it. Do not
-expand universally known domain forms on every page, and never change an
-identifier merely to match prose.
+**Abbreviation.** Expand at first use when the audience may not know it. Do not expand universally known domain forms on every page, and never change an identifier merely to match prose.
 
-**False precision.** A coined category can imply a stable boundary the source
-does not establish. Define inclusion and exclusion, cite a governing source, or
-use an ordinary descriptive phrase.
+**False precision.** A coined category can imply a stable boundary the source does not establish. Define inclusion and exclusion, cite a governing source, or use an ordinary descriptive phrase.
 
 ## Candidate generation
 
@@ -67,27 +45,19 @@ Generate alternatives from the actual referent:
 4. Which alternative preserves searchability, scope, and requirement level?
 5. Would rewriting the whole clause be clearer than swapping one word?
 
-Do not create specificity that the evidence boundary does not supply. For
-example, replace an unsupported "stakeholders" with a known group only when the
-source names that group; otherwise keep the uncertainty or request the name.
+Do not create specificity that the evidence boundary does not supply. For example, replace an unsupported "stakeholders" with a known group only when the source names that group; otherwise keep the uncertainty or request the name.
 
 ## Common false-positive families
 
 Keep these when they are exact:
 
 - legal, scientific, medical, and standards terminology
-- protocol fields, code symbols, CLI commands, schema properties, and product
-  names
-- established software phrases such as trust boundary, data contract, build
-  artifact, semantic versioning, vertical slice, and attack surface
+- protocol fields, code symbols, CLI commands, schema properties, and product names
+- established software phrases such as trust boundary, data contract, build artifact, semantic versioning, vertical slice, and attack surface
 - deliberate workplace shorthand defined for the document's audience
-- terms required for search, interoperability, compliance, or consistency with
-  another authoritative page
+- terms required for search, interoperability, compliance, or consistency with another authoritative page
 
-Words associated with generated prose, including `robust`, `seamless`,
-`holistic`, and their translations, are review prompts only. Remove them when
-they carry no scope or consequence. Keep them when the domain defines the term
-or the sentence proves the property.
+Words associated with generated prose, including `robust`, `seamless`, `holistic`, and their translations, are review prompts only. Remove them when they carry no scope or consequence. Keep them when the domain defines the term or the sentence proves the property.
 
 ## Decision record
 

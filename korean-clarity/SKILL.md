@@ -58,8 +58,10 @@ the reader cannot safely recover one of these:
 
 If context already establishes the relation without effort, omission is valid
 Korean and no repair is needed. If the missing information is not established
-by the supplied material or allowed evidence, keep the uncertainty or ask for
-the fact instead of inventing it.
+by the supplied material or allowed evidence, preserve the uncertainty and
+complete independent repairs. Ask only when the unresolved relation materially
+changes the requested meaning; do not turn every omitted subject into a
+clarification question.
 
 ## Repair rules
 
@@ -119,6 +121,10 @@ Before delivery:
 - confirm that protected literals and established terms are unchanged; and
 - check that correction did not replace the writer's voice with uniformly
   polished prose.
+
+Finish when the missing relations are recoverable and meaning is preserved.
+Do not generate successive rewrites merely to make an already-clear sentence
+sound fuller or more polished.
 
 The copyable [always-on core](assets/always-on-core.md) is an optional compact
 adapter for the agent's own Korean responses. Install or modify an always-on

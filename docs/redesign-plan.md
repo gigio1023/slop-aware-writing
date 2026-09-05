@@ -1,28 +1,10 @@
 # clear-writing 재설계 계획 (P1 산출물, 2026-07-26)
 
-> 상태: 이 문서는 초기 설계를 보존한 historical 기록이며 현재 실행
-> 계획으로는 superseded 상태다. 하단의 보류 표기를 현재 결정으로 읽지
-> 않는다. D4는 후속 구현에서 해결했다. 한국어 답변 수칙 15개를
-> `slop-aware-writing/references/core-rules.md`의 당시
-> `clear-writing:core v1` 블록으로
-> 당시 상시 계층을 구성했다. 현재 정본은 v2며 상시 계층 반영은
-> 설치자가 별도로 갱신해야 한다. 현재 작동 규약은
-> `slop-aware-writing/SKILL.md`와 `slop-aware-writing/references/`를 따른다.
-> 설치 마커는 배포 호환성을 위해 기존 이름을 유지한다. 아래 본문은 2026-07-26 당시의
-> 계획과 미해결 상태를 설명하므로 고치지 않았다.
-> 2026-08 다국어 재설계에서는 아래의 `known-slop-terms.md`와
-> `replacement-patterns.md`를 중복된 과거 목표로 판정하고 현재의
-> `terminology-catalog.md`로 합쳤다. 영어, 이탈리아어, 중국어 계층도 이후
-> 추가됐다. 아래 트리는 현재 패키지 목록이 아니다.
+> 상태: 이 문서는 초기 설계를 보존한 historical 기록이며 현재 실행 계획으로는 superseded 상태다. 하단의 보류 표기를 현재 결정으로 읽지 않는다. D4는 후속 구현에서 해결했다. 한국어 답변 수칙 15개를 `slop-aware-writing/references/core-rules.md`의 당시 `clear-writing:core v1` 블록으로 당시 상시 계층을 구성했다. 현재 정본은 v2며 상시 계층 반영은 설치자가 별도로 갱신해야 한다. 현재 작동 규약은 `slop-aware-writing/SKILL.md`와 `slop-aware-writing/references/`를 따른다. 설치 마커는 배포 호환성을 위해 기존 이름을 유지한다. 아래 본문은 2026-07-26 당시의 계획과 미해결 상태를 설명하므로 고치지 않았다. 2026-08 다국어 재설계에서는 아래의 `known-slop-terms.md`와 `replacement-patterns.md`를 중복된 과거 목표로 판정하고 현재의 `terminology-catalog.md`로 합쳤다. 영어, 이탈리아어, 중국어 계층도 이후 추가됐다. 아래 트리는 현재 패키지 목록이 아니다.
 
-이 문서는 통합 스킬 `clear-writing` 저작(P2)의 입력이다. 배경·근거·전체 로드맵의
-정본은 워크스페이스의 `notes/humanize-consolidation/launch-brief.md`와 계획
-아티팩트에 있다. 여기에는 P2가 그대로 따라 할 수 있는 것만 담는다:
-목표 레포 구조, 규칙 단위 이관 매트릭스, 트리거 시뮬레이션.
+이 문서는 통합 스킬 `clear-writing` 저작(P2)의 입력이다. 배경·근거·전체 로드맵의 정본은 워크스페이스의 `notes/humanize-consolidation/launch-brief.md`와 계획 아티팩트에 있다. 여기에는 P2가 그대로 따라 할 수 있는 것만 담는다: 목표 레포 구조, 규칙 단위 이관 매트릭스, 트리거 시뮬레이션.
 
-결정 전제 (P0 확정): 이름 `clear-writing`(스킬=레포=디렉터리), 정본은 이 레포,
-회사/개인 구분 없음(엄격 프로파일로 수용), python-docstrings·english-prompt-review
-제외, 코어 수칙의 상시 계층 기재는 최종 완성 후 결정(D4 보류).
+결정 전제 (P0 확정): 이름 `clear-writing`(스킬=레포=디렉터리), 정본은 이 레포, 회사/개인 구분 없음(엄격 프로파일로 수용), python-docstrings·english-prompt-review 제외, 코어 수칙의 상시 계층 기재는 최종 완성 후 결정(D4 보류).
 
 ## 1. 목표 레포 구조
 
@@ -55,11 +37,7 @@ clear-writing/                      # 레포 루트
 └── (레포 관리 파일)
 ```
 
-원칙: 이미 좋은 원본 파일은 다시 쓰지 않고 그대로 이관한다(templates,
-doc-patterns, 용어 refs 3종). 새로 쓰는 것은 라우터, core-rules,
-voice-preservation, profiles, 그리고 병합이 필요한 파일들뿐이다.
-`npx skills add . --list --full-depth`가 `clear-writing` 하나만 보고해야 한다
-(구 humanize-doc/ 제거 이후).
+원칙: 이미 좋은 원본 파일은 다시 쓰지 않고 그대로 이관한다(templates, doc-patterns, 용어 refs 3종). 새로 쓰는 것은 라우터, core-rules, voice-preservation, profiles, 그리고 병합이 필요한 파일들뿐이다. `npx skills add . --list --full-depth`가 `clear-writing` 하나만 보고해야 한다 (구 humanize-doc/ 제거 이후).
 
 ## 2. 이관 매트릭스 (규칙 단위 keep / merge / drop)
 
@@ -129,12 +107,7 @@ voice-preservation, profiles, 그리고 병합이 필요한 파일들뿐이다.
 
 ## 3. 트리거 시뮬레이션 (12종)
 
-description 초안(P2에서 확정): "산문 문서의 작성·정리·윤문·용어 작업 전반.
-Use when creating, restructuring, rewriting, humanizing, or reviewing prose
-documents (README, guides, specs, memos, wiki, 기술 문서) in English or
-Korean, including de-AI-ifying tone, terminology naturalization, and turning
-notes into standalone docs. NOT for Python docstrings, prompt coaching,
-diagrams, PR/commit copy, or translation."
+description 초안(P2에서 확정): "산문 문서의 작성·정리·윤문·용어 작업 전반. Use when creating, restructuring, rewriting, humanizing, or reviewing prose documents (README, guides, specs, memos, wiki, 기술 문서) in English or Korean, including de-AI-ifying tone, terminology naturalization, and turning notes into standalone docs. NOT for Python docstrings, prompt coaching, diagrams, PR/commit copy, or translation."
 
 | # | 요청 | 발화 | 통합 전 문제 |
 | --- | --- | --- | --- |
@@ -151,21 +124,12 @@ diagrams, PR/commit copy, or translation."
 | 11 | "아키텍처 다이어그램 그려줘" | 발화 안 함 → mermaid/drawio | NOT-for 명시 |
 | 12 | "이 영어 문서 한국어로 번역해줘" | 발화 안 함 — 번역은 제외. 단, 이미 한국어인 글의 번역투 제거는 4번과 같음 | 경계 사례 문서화 |
 
-경계 메모: "답변 좀 자연스럽게 써줘"처럼 대화 답변 자체에 대한 요청은 스킬이
-아니라 상시 코어의 영역이다(스킬 로드 불필요).
+경계 메모: "답변 좀 자연스럽게 써줘"처럼 대화 답변 자체에 대한 요청은 스킬이 아니라 상시 코어의 영역이다(스킬 로드 불필요).
 
 ## 4. P2 저작 순서와 남은 결정
 
-저작 순서(의존성 기준): ① 그대로 이관 5종 복사 → ② korean-tells.md
-(upstream v2.3 클론 대조 필요) → ③ 병합 3종(anti-slop-core,
-structure-anti-patterns, gates) → ④ 신규 3종(voice-preservation, profiles,
-core-rules 초안) → ⑤ revision.md, authoring.md, terminology.md →
-⑥ SKILL.md 라우터 → ⑦ README 재작성.
+저작 순서(의존성 기준): ① 그대로 이관 5종 복사 → ② korean-tells.md (upstream v2.3 클론 대조 필요) → ③ 병합 3종(anti-slop-core, structure-anti-patterns, gates) → ④ 신규 3종(voice-preservation, profiles, core-rules 초안) → ⑤ revision.md, authoring.md, terminology.md → ⑥ SKILL.md 라우터 → ⑦ README 재작성.
 
-P2 중 소결정(리드 재량, 기록만 남김): style-zoom-rules 유지 vs authoring.md
-흡수, terminology refs의 압축 수준, korean-tells의 사례 분량.
+P2 중 소결정(리드 재량, 기록만 남김): style-zoom-rules 유지 vs authoring.md 흡수, terminology refs의 압축 수준, korean-tells의 사례 분량.
 
-P2 이후: P3 평가(문서 과업 6종 3안 비교 + 한국어 Q&A 코어 A/B + 실전 파일럿 2건)
-→ P4 퇴역·배포(agent-skills에서 terminology-review·engineering-docs 제거,
-agent-skills README의 humanize-doc 링크를 clear-writing으로 갱신, 구
-humanize-doc/ 폴더 제거, 전 하네스 재설치, 회사 반입 zip 재포장, D4 결정).
+P2 이후: P3 평가(문서 과업 6종 3안 비교 + 한국어 Q&A 코어 A/B + 실전 파일럿 2건) → P4 퇴역·배포(agent-skills에서 terminology-review·engineering-docs 제거, agent-skills README의 humanize-doc 링크를 clear-writing으로 갱신, 구 humanize-doc/ 폴더 제거, 전 하네스 재설치, 회사 반입 zip 재포장, D4 결정).

@@ -1,8 +1,6 @@
 # Style Zoom Repair Patterns
 
-Use the smallest section that matches the observed documentation problem. The
-patterns are examples, not mandatory syntax. Angle-bracket link targets are
-placeholders; replace them with inspected repository paths.
+Use the smallest section that matches the observed documentation problem. The patterns are examples, not mandatory syntax. Angle-bracket link targets are placeholders; replace them with inspected repository paths.
 
 ## Sentence
 
@@ -10,21 +8,17 @@ Keep the main assertion visible and preserve conditions that affect truth.
 
 ```markdown
 <!-- Dense -->
-The client retries writes, when retry mode is enabled, after transient failures,
-as described in the transport guide.
+The client retries writes, when retry mode is enabled, after transient failures, as described in the transport guide.
 
 <!-- Clear -->
-When retry mode is enabled, the client retries writes after transient failures.
-See [retry behavior](<path-to-transport-doc#retries>).
+When retry mode is enabled, the client retries writes after transient failures. See [retry behavior](<path-to-transport-doc#retries>).
 ```
 
-Do not split a sentence merely because it has two clauses. Split when readers
-must disentangle separate claims or a source interrupts the claim.
+Do not split a sentence merely because it has two clauses. Split when readers must disentangle separate claims or a source interrupts the claim.
 
 ## Bullet
 
-Use parallel items for parallel facts. Nest only when a parent genuinely groups
-several children.
+Use parallel items for parallel facts. Nest only when a parent genuinely groups several children.
 
 ```markdown
 <!-- Hard to scan -->
@@ -36,8 +30,7 @@ several children.
 - **Checks**: pytest and Ruff.
 ```
 
-Keep one compact bullet when the details form one unit. Do not convert every
-comma into a list.
+Keep one compact bullet when the details form one unit. Do not convert every comma into a list.
 
 ## Section
 
@@ -55,14 +48,11 @@ This section describes how authentication works in this project.
 Set `API_TOKEN` before starting the server.
 ```
 
-Architecture and rationale sections may need explanation before a diagram or
-decision. “Command first” is not universal.
+Architecture and rationale sections may need explanation before a diagram or decision. “Command first” is not universal.
 
 ## Page
 
-Give the page one primary reader job. A README can orient, provide a verified
-start path, and link deeper. Move an API catalogue or migration history only
-when another maintained page is a better owner and navigation remains clear.
+Give the page one primary reader job. A README can orient, provide a verified start path, and link deeper. Move an API catalogue or migration history only when another maintained page is a better owner and navigation remains clear.
 
 Do not split solely because a page crosses a line-count threshold.
 
@@ -71,17 +61,11 @@ Do not split solely because a page crosses a line-count threshold.
 Consolidate facts that are volatile, duplicated in full, and already drifting.
 
 ```markdown
-Run `uv run pytest` for the default suite. See
-[test options](<path-to-testing-doc>) for markers and integration setup.
+Run `uv run pytest` for the default suite. See [test options](<path-to-testing-doc>) for markers and integration setup.
 ```
 
-A summary plus a link is useful duplication. Keep required local context in
-safety procedures, setup prerequisites, and offline reference material.
+A summary plus a link is useful duplication. Keep required local context in safety procedures, setup prerequisites, and offline reference material.
 
 ## Links and Renderer Surfaces
 
-Prefer descriptive link text such as
-`[retry behavior](<path-to-transport-doc#retries>)`.
-Raw URLs and paths are fine when they are data. Introduce notes, tabs, diagrams,
-or collapsible blocks only when the renderer supports them and hidden content
-remains discoverable and safe.
+Prefer descriptive link text such as `[retry behavior](<path-to-transport-doc#retries>)`. Raw URLs and paths are fine when they are data. Introduce notes, tabs, diagrams, or collapsible blocks only when the renderer supports them and hidden content remains discoverable and safe.

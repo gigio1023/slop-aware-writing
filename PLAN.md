@@ -2,19 +2,12 @@
 
 ## Goals
 
-- **R1:** Keep one portable writing skill while separating language-neutral
-  judgment from language-specific prose guidance.
-- **R2:** Preserve verified English and Korean material, and add bounded
-  Italian and Chinese support from primary or authoritative sources.
-- **R3:** Make evidence, cold-reader completeness, claim force, and author
-  voice outrank surface anti-slop cleanup.
-- **R4:** Reduce duplicate or stale instructions without weakening existing
-  authoring, revision, terminology, or Korean workflows.
-- **R5:** Keep the package discoverable in Codex and Claude Code under the
-  maintainer-selected `slop-aware-writing` handle.
-- **R6:** Make AI-slop diagnosis the primary contract, rely on frontier-model
-  fluency for ordinary language knowledge, and prevent language overlays from
-  becoming grammar encyclopedias.
+- **R1:** Keep one portable writing skill while separating language-neutral judgment from language-specific prose guidance.
+- **R2:** Preserve verified English and Korean material, and add bounded Italian and Chinese support from primary or authoritative sources.
+- **R3:** Make evidence, cold-reader completeness, claim force, and author voice outrank surface anti-slop cleanup.
+- **R4:** Reduce duplicate or stale instructions without weakening existing authoring, revision, terminology, or Korean workflows.
+- **R5:** Keep the package discoverable in Codex and Claude Code under the maintainer-selected `slop-aware-writing` handle.
+- **R6:** Make AI-slop diagnosis the primary contract, rely on frontier-model fluency for ordinary language knowledge, and prevent language overlays from becoming grammar encyclopedias.
 
 ## Tasks
 
@@ -48,24 +41,12 @@
 
 ## Verification record
 
-- Rename verification (2026-08-03):
-  `validate_skill.sh slop-aware-writing` passed at 7,897 bytes and 148 lines;
-  both Skills CLI listing commands found exactly one installable skill named
-  `slop-aware-writing`; all 19 direct references exist; repository-relative
-  Markdown links resolve; the portable body contains no harness-specific paths
-  or invocation syntax; `git diff --cached --check` passed.
-- `validate_skill.sh clear-writing`: passed at 7,786 bytes and 147 lines after
-  the model-native anti-slop revision.
-- `npx --yes skills add . --list --full-depth`: found exactly one installable
-  skill, `clear-writing`.
+- Rename verification (2026-08-03): `validate_skill.sh slop-aware-writing` passed at 7,897 bytes and 148 lines; both Skills CLI listing commands found exactly one installable skill named `slop-aware-writing`; all 19 direct references exist; repository-relative Markdown links resolve; the portable body contains no harness-specific paths or invocation syntax; `git diff --cached --check` passed.
+- `validate_skill.sh clear-writing`: passed at 7,786 bytes and 147 lines after the model-native anti-slop revision.
+- `npx --yes skills add . --list --full-depth`: found exactly one installable skill, `clear-writing`.
 - `git diff --check`: passed.
 - Local Markdown target check: all repository-relative links resolve.
 - Router reference check: all 19 unique direct reference files exist.
-- Fresh-context reviews: English/common, Italian, and Chinese reviewers found
-  no material issue after targeted repairs and rechecks.
-- Model-native follow-up: router and reference read-through confirmed that
-  language overlays are conditional, grammar-only proofreading is excluded,
-  and every supported language retains a correction floor and meaning gate.
-- Not verified: no harness-specific model-behavior benchmark or representative
-  human-reader study was run. The existing eval prompts remain prompts, not
-  measured results.
+- Fresh-context reviews: English/common, Italian, and Chinese reviewers found no material issue after targeted repairs and rechecks.
+- Model-native follow-up: router and reference read-through confirmed that language overlays are conditional, grammar-only proofreading is excluded, and every supported language retains a correction floor and meaning gate.
+- Not verified: no harness-specific model-behavior benchmark or representative human-reader study was run. The existing eval prompts remain prompts, not measured results.

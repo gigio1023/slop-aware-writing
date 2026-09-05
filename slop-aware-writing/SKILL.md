@@ -47,6 +47,10 @@ Establish before touching text:
    syntax, register, punctuation, or regional usage. Preserve identifiers,
    quotations, and established borrowed terms in mixed-language text.
 
+Infer intake from the request and sources. Ask only about missing facts or
+choices that change meaning or scope; preserve unresolved spans and continue
+independent edits.
+
 ## Language routing
 
 Always apply [anti-slop-core.md](references/anti-slop-core.md). A language file
@@ -143,8 +147,6 @@ document by a detector score, pattern count, or change percentage.
 ## Gotchas
 
 - Phrase swapping is not humanizing. Fix the dominant functional failure.
-- A grammatical sentence can still be slop. An imperfect sentence can still
-  carry a precise thought and a real voice.
 - Keep a rule only when it bounds evidence, preserves meaning, or catches a
   recurring model-assisted writing failure.
 - Specificity must come from evidence. When it does not, find the fact, keep

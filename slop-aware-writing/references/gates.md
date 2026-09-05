@@ -85,9 +85,10 @@ Estimate the changed share of word-units against the original (revision work
 only):
 
 - **> 30%**: warn in the report; re-verify Gate 2 span by span.
-- **> 50%**: stop. Do not deliver a silent full rewrite — either the request
-  authorized a rewrite (say so explicitly) or return to the user with the
-  reason the text needs more than editing.
+- **> 50%**: check the established edit scope. If a full rewrite is already
+  authorized, complete it with source and voice verification. Otherwise keep
+  the bounded edits and explain the concrete expansion that needs approval;
+  do not silently replace the whole document.
 
 Never present change volume, pattern counts, or a letter grade as a quality
 score in either direction.
@@ -131,13 +132,18 @@ Any failure: fix before delivery, not after.
   available and proportionate; `git diff --check` where applicable.
 - Distinguish in the report: checks run, inspected-only, unavailable.
 
+Finish when the applicable checks pass and material limitations are visible.
+Repeat a pass only after a relevant edit, a detected defect, or an unresolved
+meaning or source issue. Do not cycle through language overlays or fresh
+readers solely to obtain another stylistic opinion.
+
 ## Report format
 
 Lead with the deliverable (or highest-impact findings for review mode).
 Review-mode findings quote the offending line, name the pattern, and give the
 fix in a few words — a quoted pattern is evidence the user can check; scores
-and authorship guesses are not. Then,
-briefly: files touched, major patterns fixed or structural decisions, checks
-run with results, and spans left unchanged because meaning could not be
-proven preserved. No grades, no change-rate percentages as scores, no process
-narration.
+and authorship guesses are not. For a repository edit, briefly identify changed
+files and material verification limits. For a copy-only rewrite, return the
+text without a mandatory change report; add a note only for an ambiguity,
+source gap, or scope decision that affects trust. No grades, no change-rate
+percentages as scores, no process narration.

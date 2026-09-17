@@ -1,6 +1,6 @@
 # Terminology Pass
 
-Find terms that are wrong or unnatural in their actual domain and replace them with language the intended readers use. Runs standalone on a "용어 봐줘 / term check" request, or as a sub-pass inside revision and authoring. A watch-list hit is a review lead — never proof that text is AI-generated or that the term is wrong.
+Find terms that are wrong or unnatural in their actual domain and replace them with language the intended readers use. Runs standalone on a "용어 봐줘 / term check" request, or as a sub-pass inside an explicitly requested revision. A watch-list hit is a review lead — never proof that text is AI-generated or that the term is wrong.
 
 ## Decision test
 

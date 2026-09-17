@@ -52,9 +52,9 @@ If context already establishes the relation without effort, omission is valid Ko
 
 Never make a sentence more specific by inventing names, numbers, causes, examples, or intentions. Do not alter code blocks, commands, paths, URLs, identifiers, schema fields, logs, quotations, product names, or standard acronyms merely to make the surrounding prose Korean.
 
-## Compose with slop-aware writing
+## Compose with other writing skills
 
-This skill and `slop-aware-writing` have independent triggers and must each work when installed alone. When both apply, `slop-aware-writing` owns the document's evidence boundary, reader job, structure, change authority, and voice preservation. This skill repairs only Korean semantic completeness inside those constraints. A clarity edit cannot strengthen a claim, resolve a factual conflict, add connective reasoning without support, or flatten a repeated author choice.
+This skill, `slop-aware-writing`, and `technical-report-writing` have independent triggers and must each work when installed alone. When the writer is active, reuse its reader, evidence, and requested edit scope. When both apply, `slop-aware-writing` owns the document's evidence boundary, reader job, structure, change authority, and voice preservation. This skill repairs only Korean semantic completeness inside those constraints. A clarity edit cannot strengthen a claim, resolve a factual conflict, add connective reasoning without support, or flatten a repeated author choice.
 
 ## Delivery and verification
 

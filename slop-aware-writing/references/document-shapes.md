@@ -1,6 +1,6 @@
 # Document Shapes
 
-Use this page after choosing the document's primary reader job in `authoring.md`. The shapes below are selection prompts, not templates or completion checklists. Keep only the sections that help the reader act, understand, decide, or verify.
+Use this page when an existing document needs structural revision for its reader. The shapes below are selection prompts, not templates or completion checklists. Keep only the sections that help the reader act, understand, decide, or verify.
 
 Every value, command, example, result, error, and recovery step must come from supplied material, inspected repository evidence, or verified external sources. Otherwise omit it or use a visibly fake placeholder.
 

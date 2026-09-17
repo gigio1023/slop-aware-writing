@@ -1,6 +1,6 @@
 # Source Grounding
 
-Use this procedure when a document depends on external claims, combines evidence boundaries, updates time-sensitive facts, or inherits material that may itself be stale or generated. Repository-only work still follows `authoring.md`; terminology-only research still follows `verification-procedure.md`.
+Use this procedure when a document depends on external claims, combines evidence boundaries, updates time-sensitive facts, or inherits material that may itself be stale or generated. For repository-backed corrections, inspect the relevant code or documentation within the requested revision; terminology-only research follows `verification-procedure.md`.
 
 ## Contents
 

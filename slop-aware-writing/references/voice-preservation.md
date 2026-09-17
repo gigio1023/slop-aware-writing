@@ -37,7 +37,7 @@ What to protect instead, because it is this register's voice:
 
 ## Anti-homogenization rules
 
-- **Mode boundary.** Humanize and surface cleanup are removal-first: delete or tighten slop, and never insert stock transitions, invented examples, fake citations, or replacement clichés. Compose and full revision may restore necessary context or reasoning only inside the evidence boundary in `source-grounding.md`.
+- **Mode boundary.** Humanize and surface cleanup are removal-first: delete or tighten slop, and never insert stock transitions, invented examples, fake citations, or replacement clichés. Context repair and full revision may restore necessary context or reasoning only inside the evidence boundary in `source-grounding.md`.
 - **No vocabulary upgrades.** Do not swap plain words for rarer synonyms or lengthen words merely to sound polished. The bounded English evidence below observed that direction in one setting; meaning preservation is the common reason for this rule.
 - **Watch for unauthorized drift while editing.** Compare stance, information order, register, recurring phrases, sentence rhythm, and lexical range with the source. Do not use one English study's marker direction as a multilingual checklist.
 - **Batch rule.** When revising multiple documents (or one author's varied notes), do not converge them toward one safe middle voice; preserve per-document register differences.

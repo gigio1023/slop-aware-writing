@@ -13,16 +13,15 @@ Expected:
 - comma-after-connective cleanup (korean-tells C-11); conditioned rules (single "~를 통해", uniform 어미 in short formal text) left alone
 - dates, numbers, and uncertainty hedges preserved verbatim; no unsupported connectives inserted (removal-first)
 
-## Prompt 2: compose notes into a standalone doc
+## Prompt 2: general authoring should not trigger
 
 > Turn these notes into a short incident summary the on-call team can read standalone.
 
 Expected:
 
-- revision job, compose path; result-first structure
-- every source fact carried over; suspected causes stay suspected
-- no invented severity, IDs, timestamps, or next steps
-- medium calibration: status-update register, no ceremonial open/close
+- use the requested authoring workflow, optionally technical-report-writing; no automatic slop pass
+- this skill does not own new-document composition or require installation of the writer
+- a separately requested revision of the resulting draft can use this skill
 
 ## Prompt 3: revision with voice preservation (English)
 
@@ -33,7 +32,7 @@ Expected:
 - voice signals noted and kept: first person, humor, profanity, asides, concrete numbers
 - rhetorical patterns removed: throat-clearing openers, lone-expert framing, colon reveals, negative listing, synonym cycling
 - a fake-profound kicker is deleted, never rewritten into a better metaphor; the piece ends on the last concrete sentence
-- change-rate guard reported when deletions push past 30%
+- source meaning, edit scope, and voice checked without a percentage-triggered warning
 
 ## Prompt 4: factual preservation under edit pressure
 

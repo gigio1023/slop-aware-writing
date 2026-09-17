@@ -2,9 +2,9 @@
 
 [![skills.sh](https://skills.sh/b/gigio1023/slop-aware-writing)](https://skills.sh/gigio1023/slop-aware-writing) ![writing](https://img.shields.io/badge/writing-EN%20%7C%20KO%20%7C%20IT%20%7C%20ZH-22684E) ![package](https://img.shields.io/badge/package-2%20portable%20skills-555) [![license](https://img.shields.io/badge/license-MIT-555)](LICENSE)
 
-This repository publishes two related writing skills. `slop-aware-writing` writes and revises documents while preventing or removing AI slop without flattening the writer's meaning or voice. `korean-clarity` repairs Korean whose sentence components, morphology, or ordinary technical wording were lost under agent-style compression.
+This repository publishes two related writing skills. `slop-aware-writing` handles explicit focused revision of existing prose to remove AI slop without flattening meaning or voice. `korean-clarity` repairs Korean whose sentence components, morphology, or ordinary technical wording were lost under agent-style compression.
 
-`slop-aware-writing` treats slop as a functional writing failure: plausible completion has replaced selection, evidence, reader context, or a real point of view. It handles humanizing and deslop passes, plus slop-aware work on README, guides, specs, API references, ADRs, memos, wiki pages, and blog drafts. It trusts the LLM's base fluency for ordinary grammar and idiom. The skill adds the diagnosis, evidence boundary, voice protection, and minimal-edit tests that general language competence does not supply reliably.
+`slop-aware-writing` treats slop as a functional writing failure: plausible completion has replaced selection, evidence, reader context, or a real point of view. It handles requested humanizing, deslop, terminology, and voice-preserving revision of existing drafts. General authoring belongs to the requested writing workflow, optionally `technical-report-writing` in agent-skills; no automatic second pass is required. It trusts the LLM's base fluency for ordinary grammar and idiom. The skill adds the diagnosis, evidence boundary, voice protection, and minimal-edit tests that general language competence does not supply reliably.
 
 [Architecture](#architecture) · [Languages](#language-overlays) · [Evidence](#evidence-and-lineage) · [Layout](#package-layout) · [Install](#install) · [Development](#local-development)
 
@@ -12,17 +12,16 @@ This repository publishes two related writing skills. `slop-aware-writing` write
 
 | Skill | Use it for | Do not use it for |
 |---|---|---|
-| `slop-aware-writing` | document-level deslop, evidence-bounded authoring, voice-preserving revision, and terminology review | grammar-only correction, translation, or ordinary chat |
+| `slop-aware-writing` | explicit deslop, voice-preserving revision, and terminology review | grammar-only correction, translation, or ordinary chat |
 | `korean-clarity` | Korean responses and artifacts with omitted sentence components, particles, endings, predicates, relations, or conventional wording | translation, AI-authorship detection, or document-level deslop by itself |
 
-The skills have independent triggers and can be installed separately. When both apply, `slop-aware-writing` owns the evidence boundary, reader job, structure, edit authority, and voice. `korean-clarity` repairs semantic completeness only inside those constraints.
+The skills have independent triggers and can be installed separately. [Composition and migration](docs/focused-revision.md) explains the boundary with the writer and sharing skills. When both apply, `slop-aware-writing` owns the evidence boundary, reader job, structure, edit authority, and voice. `korean-clarity` repairs semantic completeness only inside those constraints.
 
 The `slop-aware-writing` `SKILL.md` is a router. It establishes the reader job, evidence boundary, edit authority, governing policy, and voice sample. It always loads the common slop diagnosis. A language overlay loads only when a candidate depends on that language or locale.
 
 | Job | Covers | Primary reference |
 |---|---|---|
-| Authoring | new or materially updated evidence-grounded documents | `references/authoring.md` |
-| Revision | humanizing, restructuring, and composing notes into a standalone document | `references/revision.md` |
+| Revision | humanizing and scoped structural or context repair of an existing draft | `references/revision.md` |
 | Focused pass | terminology or a language-specific slop pattern | `references/terminology.md` or one language overlay |
 
 The common layer defines four recurring failures:

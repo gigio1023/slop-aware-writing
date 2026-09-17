@@ -1,6 +1,6 @@
 # Delivery Gates
 
-Run before delivering any authored or revised document. Apply to the changed scope, not mechanically to every page. The bar is these gates plus fact preservation, not "it reads natural to me."
+Run before delivering the requested revision. Apply to the changed scope, not mechanically to every page. The bar is these gates plus fact preservation, not "it reads natural to me."
 
 ## Contents
 
@@ -44,14 +44,9 @@ Run before delivering any authored or revised document. Apply to the changed sco
 
 ## Gate 4 — Change-rate guard
 
-Estimate the changed share of word-units against the original (revision work only):
+Check whether the actual edit changes the requested scope, meaning, structure, or voice. A short edit can alter the claim; a requested full rewrite can legitimately change most words. Verify consequential changes against the source. Continue an authorized rewrite without asking again; keep a local edit bounded when broader rewriting was not requested.
 
-- **> 30%**: warn in the report; re-verify Gate 2 span by span.
-- **> 50%**: check the established edit scope. If a full rewrite is already authorized, complete it with source and voice verification. Otherwise keep the bounded edits and explain the concrete expansion that needs approval; do not silently replace the whole document.
-
-Never present change volume, pattern counts, or a letter grade as a quality score in either direction.
-
-The 30% and 50% thresholds are a conservative repository operating policy, not an empirically validated quality boundary. A lower change rate can still alter meaning; an explicitly authorized rebuild can exceed 50% after full source and voice verification.
+Do not report edit percentages, pattern counts, or grades as quality evidence or add warnings merely because many words changed.
 
 ## Gate 5 — Editor-slop test (self-check on OWN output)
 
@@ -67,7 +62,7 @@ Any failure: fix before delivery, not after.
 ## Gate 6 — Verification actions
 
 - Re-read the complete changed page top to bottom, as its intended reader.
-- For a new or materially rebuilt document, use an isolated fresh-context reader when available: provide only the document and intended reader role, then test realistic questions, hidden assumptions, ambiguous references, and contradictions. With no isolated context, perform the same cold read sequentially. An LLM reader is a low-cost self-containment proxy, not a test of factual accuracy or actual-user comprehension. Recommend representative reader testing when misunderstanding is consequential.
+- For a materially rebuilt document, use an isolated fresh-context reader when available and delegation is authorized: provide only the document and intended reader role, then test realistic questions, hidden assumptions, ambiguous references, and contradictions. With no isolated context, perform the same cold read sequentially. An LLM reader is a low-cost self-containment proxy, not a test of factual accuracy or actual-user comprehension. Recommend representative reader testing when misunderstanding is consequential.
 - Inspect the diff for unrelated churn and accidental deletions of scope, prerequisites, exceptions, or ownership.
 - After script or locale normalization, reread the complete affected scope and spot-check proper names, regional vocabulary, punctuation, quotations, and protected literals.
 - Search inbound references before renaming headings or anchors.

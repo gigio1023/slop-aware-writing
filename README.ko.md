@@ -2,9 +2,9 @@
 
 [![skills.sh](https://skills.sh/b/gigio1023/slop-aware-writing)](https://skills.sh/gigio1023/slop-aware-writing) ![writing](https://img.shields.io/badge/writing-EN%20%7C%20KO%20%7C%20IT%20%7C%20ZH-22684E) ![package](https://img.shields.io/badge/package-2%20portable%20skills-555) [![license](https://img.shields.io/badge/license-MIT-555)](LICENSE)
 
-이 저장소는 서로 연결되는 글쓰기 스킬 두 개를 배포합니다. `slop-aware-writing`은 원문의 의미와 저자 목소리를 보존하면서 AI slop을 예방하거나 걷어냅니다. `korean-clarity`는 에이전트식 압축 때문에 문장 성분, 조사와 어미, 서술어, 통상적인 기술 표현이 빠진 한국어를 복구합니다.
+이 저장소는 서로 연결되는 글쓰기 스킬 두 개를 배포합니다. `slop-aware-writing`은 명시적으로 요청한 기존 문장 수정에서 원문의 의미와 저자 목소리를 보존하면서 AI slop을 걷어냅니다. `korean-clarity`는 에이전트식 압축 때문에 문장 성분, 조사와 어미, 서술어, 통상적인 기술 표현이 빠진 한국어를 복구합니다.
 
-`slop-aware-writing`에서 slop은 작성 주체를 가리키는 표지가 아닙니다. 그럴듯하게 완성하려는 압력이 선택, 근거, 독자 맥락, 관점을 밀어낸 기능적 글쓰기 결함입니다. 이 스킬은 휴머나이즈와 deslop 작업을 중심으로 README, 가이드, 스펙, ADR, 메모, 위키, 블로그 초안을 다룹니다. 일반 문법과 관용 표현은 LLM의 기본 언어 능력에 맡깁니다. 스킬에는 AI slop 진단, 근거 경계, 목소리 보호, 최소 수정 판정처럼 기본 유창성만으로 지키기 어려운 규칙을 남깁니다.
+`slop-aware-writing`에서 slop은 작성 주체를 가리키는 표지가 아닙니다. 그럴듯하게 완성하려는 압력이 선택, 근거, 독자 맥락, 관점을 밀어낸 기능적 글쓰기 결함입니다. 이 스킬은 기존 초안에 요청한 휴머나이즈, deslop, 용어 검토, 목소리를 보존하는 수정을 다룹니다. 새 문서 작성은 요청된 작성 절차나 agent-skills의 `technical-report-writing`이 맡으며, 작성 후 자동으로 이 스킬을 거칠 필요는 없습니다. 일반 문법과 관용 표현은 LLM의 기본 언어 능력에 맡깁니다. 스킬에는 AI slop 진단, 근거 경계, 목소리 보호, 최소 수정 판정처럼 기본 유창성만으로 지키기 어려운 규칙을 남깁니다.
 
 [구조](#구조) · [언어 오버레이](#언어-오버레이) · [근거](#근거와-계보) · [패키지](#패키지-구조) · [설치](#설치) · [개발](#로컬-개발)
 
@@ -12,17 +12,16 @@
 
 | 스킬 | 적용할 작업 | 적용하지 않을 작업 |
 |---|---|---|
-| `slop-aware-writing` | 문서 수준 deslop, 근거 기반 작성, 목소리를 보존하는 개고, 용어 점검 | 문법만 고치는 작업, 번역, 일반 채팅 |
+| `slop-aware-writing` | 명시적으로 요청한 deslop, 목소리를 보존하는 수정, 용어 점검 | 문법만 고치는 작업, 번역, 일반 채팅 |
 | `korean-clarity` | 문장 성분, 조사와 어미, 서술어, 관계, 통상적인 표현이 빠진 한국어 답변과 산출물 | 번역, AI 작성 판정, 단독 문서 수준 deslop |
 
-두 스킬은 각자 발동하며 따로 설치할 수 있습니다. 둘 다 적용되면 `slop-aware-writing`이 근거 경계, 독자 과업, 구조, 수정 권한, 목소리를 정합니다. `korean-clarity`는 그 제약 안에서 의미 완결성만 복구합니다.
+두 스킬은 각자 발동하며 따로 설치할 수 있습니다. 작성·공유 스킬과의 경계는 [구성과 전환 안내](docs/focused-revision.md)에 정리했습니다. 둘 다 적용되면 `slop-aware-writing`이 근거 경계, 독자 과업, 구조, 수정 권한, 목소리를 정합니다. `korean-clarity`는 그 제약 안에서 의미 완결성만 복구합니다.
 
 `slop-aware-writing`의 `SKILL.md`는 라우터입니다. 독자 과업, 근거 경계, 수정 권한, 저장소 정책, 저자 샘플을 확인합니다. 공통 slop 진단은 항상 불러옵니다. 언어별 오버레이는 후보 표현이 해당 언어나 지역 규칙에 걸릴 때만 불러옵니다.
 
 | 작업 | 범위 | 주 reference |
 |---|---|---|
-| Authoring | 새로 쓰거나 사실을 크게 갱신하는 근거 기반 문서 | `references/authoring.md` |
-| Revision | 휴머나이즈, 재구성, 메모의 독립 문서화 | `references/revision.md` |
+| Revision | 기존 초안의 휴머나이즈와 요청 범위 안의 구조·맥락 보완 | `references/revision.md` |
 | Focused pass | 용어 또는 언어별 slop 패턴 점검 | `references/terminology.md`나 언어 오버레이 하나 |
 
 공통 계층은 네 가지 실패를 진단합니다.

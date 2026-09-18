@@ -4,10 +4,11 @@ description: >
   Use for an explicit focused revision or review of existing prose to remove
   AI slop while preserving meaning, evidence, and voice: humanize, deslop,
   "AI 티 빼줘", terminology review, or language-specific formulaic wording.
-  Supports English, Korean, Italian, Chinese, and scoped Chinese locale
-  normalization. NOT for authoring a new document, automatic second passes,
-  ordinary chat, grammar-only proofreading, translation, Python docstrings,
-  prompt coaching, PR/commit copy, or implementation changes.
+  Works in any language through the common core, with evidence-backed
+  overlays for English, Korean, Italian, and Chinese and scoped Chinese
+  locale normalization. NOT for authoring a new document, automatic second
+  passes, ordinary chat, grammar-only proofreading, translation, Python
+  docstrings, prompt coaching, PR/commit copy, or implementation changes.
 ---
 
 # Slop-Aware Writing
@@ -36,7 +37,7 @@ Retain the facts and conditions needed to interpret the revised claim. Do not re
 | Structure is the diagnosed problem | [structure-anti-patterns.md](references/structure-anti-patterns.md), [document-shapes.md](references/document-shapes.md), or [style-zoom-rules.md](references/style-zoom-rules.md) |
 | Delivery check | [gates.md](references/gates.md) |
 
-Use only the overlay implicated by the text. Ordinary fluency handles ordinary grammar; fix a clear local error during an authorized edit when meaning and voice are unambiguous. Do not translate an English tell list into other languages or invent errors to meet a pattern quota.
+Use only the overlay implicated by the text. Ordinary fluency handles ordinary grammar; fix a clear local error during an authorized edit when meaning and voice are unambiguous. For a language without an overlay, run the common core and contextual fluency alone; the nearest listed overlay's cues do not transfer. Do not translate an English tell list into other languages or invent errors to meet a pattern quota.
 
 ## Boundaries and delivery
 

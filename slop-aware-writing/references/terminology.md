@@ -32,7 +32,7 @@ Model knowledge proposes candidates; it is not sole evidence that a term is esta
 
 ## Replacement
 
-Use the decision questions in `terminology-catalog.md`, not a replacement map. Preserve technical meaning, requirement level, uncertainty, and register; rewrite the full sentence when word-swapping produces awkward prose in the target language. Never alter identifiers, schema fields, commands, quoted text, trademarks, or external API names without explicit request. Local frequency is house-style evidence, not proof of correctness; a rare term can be right for a specialist audience.
+Use the decision questions in `terminology-catalog.md`, not a replacement map. Preserve technical meaning, requirement level, uncertainty, and register; rewrite the full sentence when word-swapping produces awkward prose in the target language. An established term from the field's standard language inside prose written in another language is practitioner usage, not slop: where a field standardized on English — computer science, security, machine learning — replace a shared term with a translated coinage only when the project's reference or the intended audience genuinely settled on the local form, and keep term-language consistent within the document. The same protection applies in reverse when the field's settled vocabulary is another language. Never alter identifiers, schema fields, commands, quoted text, trademarks, or external API names without explicit request. Local frequency is house-style evidence, not proof of correctness; a rare term can be right for a specialist audience.
 
 ## Output
 

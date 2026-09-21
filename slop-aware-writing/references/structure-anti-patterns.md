@@ -1,10 +1,10 @@
 # Structural Verbosity Anti-Patterns
 
-Document-structure-level failures that make prose read machine-generated or padded. Report or repair a pattern only when it harms the page in context — these are diagnoses, not lint absolutes. Examples are English and Korean, but the reader-level patterns apply across languages when the same defect exists.
+Document-structure-level failures that delay, fragment, or obscure an explanation. Report or repair a pattern only when it harms the page in context — these are diagnoses, not lint absolutes. Examples are English and Korean, but the reader-level patterns apply across languages when the same defect exists.
 
 ## Contents
 
-- [Deletion-first patterns](#deletion-first-patterns) (cheapest wins)
+- [Deletion-first patterns](#deletion-first-patterns) (when deletion alone repairs the passage)
 - [Structure inflation](#structure-inflation)
 - [Information duplication](#information-duplication)
 - [Sentence-level padding](#sentence-level-padding)
@@ -73,10 +73,12 @@ Do not remove these while cleaning:
 
 ## Application order
 
-1. Whole-line deletions first (self-describing intros, obvious captions) — cheapest, highest yield. Check the WHY-sentence exception.
-2. Structure: table/heading inflation, decorative structure.
-3. Duplication: restate-in-different-form, option catalogs.
-4. Sentence padding: conclusion echoes, future-tense padding, scope noise.
-5. Governance-speak, slash stacking, emphasis labels.
-6. Abstract escapes → real names.
-7. Re-check preservation rules before delivery: did cleanup flatten tone in guide sections or delete WHY anchors?
+Start with the useful passage the reader needs: what should become understandable, and which supplied facts establish it? Use [the worked reconstruction](revision-example.md) when the draft contains ingredients without an explanation.
+
+1. Identify the dominant reader problem and preserve the facts, conditions, and voice needed to solve it.
+2. Give the retained material a useful relationship: an example and its mechanism, a comparison and its deciding condition, or an action and its observable result. Use only supported relationships.
+3. Remove or merge framing and repetition whose function the revised passage already performs. A local filler sentence may need deletion alone; a fragmented explanation may need reconnection or reordering.
+4. Choose the form that exposes that relationship. Values may belong in a table while their meaning belongs in prose. Keep both when they contribute different information.
+5. Re-read the result for understanding. Confirm that it answers the actual reader question without the drafting conversation and preserves the relevant WHY sentences, boundaries, register, and uncertainty.
+
+Stop when the passage does its job. Shorter text, fewer headings, or fewer negative sentences are not independent completion criteria.

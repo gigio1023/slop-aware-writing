@@ -21,6 +21,8 @@ Use this skill when requested for a focused revision or review. A document writt
 
 Infer the intended reader, requested scope, evidence, and voice from the text and context. Review requests return findings; edit requests authorize the stated changes. Preserve existing grants for repository or publication actions without inventing new ones. Ask only about ambiguity that would change meaning or authority.
 
+Use a supplied user-edited version to learn which functions the user wants the prose to perform. Compare deletions with retained explanation and distinguish that evidence from an agent's proposed cleanup. In a substantive edit, aim for a passage that advances understanding through supported facts, examples, relations, and consequences. Removing empty framing is one operation; reconnecting the useful material may be the main work.
+
 Read [anti-slop-core.md](references/anti-slop-core.md), then [revision.md](references/revision.md) for the applicable edit. Use [voice-preservation.md](references/voice-preservation.md) and [profiles.md](references/profiles.md) when a source's voice needs protection. Inspect necessary sources for a disputed factual span using [source-grounding.md](references/source-grounding.md); a prose edit does not require a literature review.
 
 Retain the facts and conditions needed to interpret the revised claim. Do not recite failures, denominators, responsibility, or every possible caveat when surrounding context or appropriate supporting material already makes the meaning clear. Delete redundant explanation without replacing it with a disclaimer or appendix. Preserve core definitions and actual required notices.

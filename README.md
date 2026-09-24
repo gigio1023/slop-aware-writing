@@ -1,5 +1,7 @@
 # Slop-Aware Writing Skills
 
+> **Archived on 2026-09-24.** Both skills were merged into [`technical-report-writing`](https://github.com/gigio1023/agent-skills/tree/main/skills/productivity/technical-report-writing) in gigio1023/agent-skills (PR #74, 2026-09-23): the explicit AI-slop revision method lives in its `references/authoring-and-revision.md` and `references/voice-and-facts.md`, the Korean tells with their evidence classes and the Korean clarity floor in `references/korean-writing.md`, and the author's standing preferences in `references/writing-profile.md`. Install that skill instead; the packages here receive no further updates. This repository stays public as the MIT license source of the adapted text (`LICENSE`, carried as `LICENSE.slop-aware-writing` in agent-skills).
+
 [![skills.sh](https://skills.sh/b/gigio1023/slop-aware-writing)](https://skills.sh/gigio1023/slop-aware-writing) ![writing](https://img.shields.io/badge/writing-EN%20%7C%20KO%20%7C%20IT%20%7C%20ZH-22684E) ![package](https://img.shields.io/badge/package-2%20portable%20skills-555) [![license](https://img.shields.io/badge/license-MIT-555)](LICENSE)
 
 This repository publishes two related writing skills. `slop-aware-writing` handles explicit focused revision of existing prose to remove AI slop without flattening meaning or voice. `korean-clarity` repairs Korean whose sentence components, morphology, or ordinary technical wording were lost under agent-style compression.

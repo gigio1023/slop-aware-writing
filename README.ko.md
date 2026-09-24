@@ -1,5 +1,7 @@
 # Slop-Aware Writing Skills
 
+> **2026-09-24 보관 처리.** 두 스킬은 gigio1023/agent-skills의 [`technical-report-writing`](https://github.com/gigio1023/agent-skills/tree/main/skills/productivity/technical-report-writing)으로 합쳐졌습니다(PR #74, 2026-09-23). 명시적 AI slop 수정 방법은 그 스킬의 `references/authoring-and-revision.md`와 `references/voice-and-facts.md`에, 근거 등급이 붙은 한국어 tell과 의미 완결 기준은 `references/korean-writing.md`에, 저자의 상시 취향은 `references/writing-profile.md`에 있습니다. 그 스킬을 설치하십시오. 이 저장소의 패키지는 더 갱신되지 않으며, 옮겨 간 문장의 MIT 라이선스 출처로 공개 상태를 유지합니다(`LICENSE`, agent-skills에는 `LICENSE.slop-aware-writing`).
+
 [![skills.sh](https://skills.sh/b/gigio1023/slop-aware-writing)](https://skills.sh/gigio1023/slop-aware-writing) ![writing](https://img.shields.io/badge/writing-EN%20%7C%20KO%20%7C%20IT%20%7C%20ZH-22684E) ![package](https://img.shields.io/badge/package-2%20portable%20skills-555) [![license](https://img.shields.io/badge/license-MIT-555)](LICENSE)
 
 이 저장소는 서로 연결되는 글쓰기 스킬 두 개를 배포합니다. `slop-aware-writing`은 명시적으로 요청한 기존 문장 수정에서 원문의 의미와 저자 목소리를 보존하면서 AI slop을 걷어냅니다. `korean-clarity`는 에이전트식 압축 때문에 문장 성분, 조사와 어미, 서술어, 통상적인 기술 표현이 빠진 한국어를 복구합니다.
